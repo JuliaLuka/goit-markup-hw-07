@@ -1,0 +1,107 @@
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 428px;
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+
+    }
+
+    /* Features */
+    .features-list {
+        gap: 24px;
+    }
+
+    .features-list-title {
+        text-align: start;     
+    }
+
+    .features-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /* Team-section */
+    .team-section>.container {
+        max-width: 582px;
+    }
+
+    .team-list {
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+
+    .team-card-list {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /* Клиент секция */
+    .customers-section>.container {
+        max-width: 582px;
+    }
+
+    .customers-section-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        min-width: 1158px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* Features */
+    .features-list {
+        gap: 24px;
+    }
+
+    .features-list-title {
+        text-align: start;
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+           
+    }
+
+    .features-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .features-icon-wrap {
+        display: flex;
+    }
+
+    .features-list-text {
+        font-weight: 400;
+    }
+
+    /* Team-section */
+    .team-section>.container {
+        max-width: 1158px;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .team-card-list {
+        width: calc((100% - 72px) / 4);
+    }
+
+    /* Клиент секция */
+    .customers-section-item {
+        width: calc((100% - 120px) / 6);
+    }
+}
