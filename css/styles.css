@@ -202,33 +202,47 @@ body {
 
 /* Главная секция 1-й страницы */
 .hero {
-    max-width: 1440px;
     margin: 0 auto;
 
     background: var(--navy-blue);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/page-1/hero-img.jpg);
+    url(../images/page-1/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/page-1/hero-mobile-2x.jpg);
+    }
+}
+
 .hero-wrap {
-    padding: 188px 0;
+    padding: 112px 0;
     text-align: center;
 }
 
 .hero-title {
-    max-width: 496px;
+    max-width: 320px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     color: var(--white);
 
-    font-weight: 700;
+    /* font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; */
     text-align: center;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+        
 }
 
 .hero-button {
@@ -309,27 +323,9 @@ body {
     letter-spacing: 0.32px;
 }
  
- /* We doing */
+/* We doing */
 .we-doing-section {
-    padding-bottom: 120px;
-}
- 
-.we-doing-section-title {
-    margin-bottom: 72px;
-    text-align: center;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-}
-
-.we-doing-list-img {
-    display: flex;
-    gap: 24px;
-}
-
-.we-doing-img {
-    width: calc((100% - 48px) / 3);
+    display: none;
 }
 
 /* Team-list */

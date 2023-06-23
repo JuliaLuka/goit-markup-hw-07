@@ -11,6 +11,39 @@
         max-width: 768px;
 
     }
+    /* Hero */
+    .hero {
+        max-width: 1440px;
+
+        background: var(--navy-blue);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/page-1/hero-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/page-1/hero-tablet-2x.jpg);
+            }
+        }
+    .hero-wrap {
+        padding: 112px 0;
+    }
+
+    .hero-title {
+        max-width: 496px;
+        margin: 0 auto;
+        margin-bottom: 36px;
+    
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+    }
 
     /* Features */
     .features-list {
@@ -59,7 +92,36 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
+    /* Hero */
+    .hero {
+        background: var(--navy-blue);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/page-1/hero-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/page-1/hero-img-2x.jpg);
+            }
+        }
+    .hero-wrap {
+        padding: 188px 0;
+    }
+    .hero-title {
+        max-width: 496px;
+        margin: 0 auto;
+        margin-bottom: 48px;
 
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+    }
     /* Features */
     .features-list {
         gap: 24px;
@@ -85,6 +147,29 @@
 
     .features-list-text {
         font-weight: 400;
+    }
+
+    /* We doing */
+    .we-doing-section {
+        padding-bottom: 120px;
+    }
+    
+    .we-doing-section-title {
+        margin-bottom: 72px;
+        text-align: center;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+    }
+    
+    .we-doing-list-img {
+        display: flex;
+        gap: 24px;
+    }
+    
+    .we-doing-img {
+        width: calc((100% - 48px) / 3);
     }
 
     /* Team-section */
