@@ -167,6 +167,7 @@
 
     .footer>.container {
         max-width: 582px;
+        gap: 0;
     }
 
     .footer-wrap {
@@ -175,6 +176,11 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: baseline;
+    }
+
+    .footer-wrap-left {
+        margin-right: 24px;
+        margin-bottom: 72px;
     }
 
     .footer-modal-form-input {
@@ -193,6 +199,16 @@
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+    .address-list {
+        display: flex;
+        margin-left: auto;
+        gap: 40px;
+    }   
+    .address-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
     }
     /* Hero */
     .hero {
