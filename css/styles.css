@@ -85,17 +85,15 @@ body {
 
 .container {
     width: 100%;
-    /* width: 1158px; */
     margin-left: auto;
     margin-right: auto;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;
 }
 
-
+/* HEADER */
 .header {
-    /* border-bottom: 1px solid #E7E9FC; */
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -130,74 +128,136 @@ body {
 }
 
 /* Навигация */
+
 .navigation-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-
-.navigation-link {
-    display: inline-block;
-    padding: 24px 0;
-    color: var(--grey);
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
+    display: none;
 }
 
 .current {
     color: var(--ocean);
 }
 
-.current::after {
-    content: "";
+.button-menu {
     display: block;
-    position: absolute;
+    margin-left: auto;
+    padding: 24px 0;
 
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
+    border: transparent;
+    background-color: transparent;
 
-    background-color: var(--ocean);
+    cursor: pointer;
 
+    stroke: var(--navy-blue);
 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Mobile MENU */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+
+    padding: 24px 24px 40px 40px;
+
+    z-index: 100;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--white);
 }
 
-.navigation-link:hover,
-.navigation-link:focus,
-.navigation-link:active {
-    color: var(--ocean);
+.menu-close-btn {
+    margin-left: auto;
+    margin-bottom: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--navy-blue);
+    
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mob-navigation-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mob-navigation-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+
+    color: var(--navy-blue);
+}
+/* Mob Address */
+.mob-address-list {
+    margin-bottom: 48px;
+}
+
+.mob-address-item:not(:last-child) {
+    margin-bottom: 40px;
+    }
+
+.mob-address-tel {
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11px;
+    letter-spacing: 0.72px;
+
+    color: var(--iris);
+}
+
+.mob-address-email {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+
+    color: var(--slate);
+}
+/* Mob Socials */
+.mob-media-list {
+    display: flex;
+    gap: 56px;
+}
+
+.mob-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--iris);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-media-icon {
+    fill: var(--cloud);
+}
 
 
 /* Контактная информация */
 .address {
-    font-style: normal;
-}
-
-.address-list {
-    display: flex;
-    margin-left: auto;
-    gap: 40px;
-}
-
-.address-link {
-    color: var(--slate); 
-    
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-link:hover,
-.address-link:focus,
-.address-link:active {
-    color: var(--ocean);
+    display: none;
 }
 
 /* Главная секция 1-й страницы */
@@ -232,10 +292,6 @@ body {
     margin-bottom: 72px;
     color: var(--white);
 
-    /* font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em; */
     text-align: center;
 
     font-weight: 700;
@@ -279,14 +335,11 @@ body {
 /* Features */
 .features-list {
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
-    /* gap: 24px; */
     gap: 72px;
 }
 
 .features-list-item {
-    /* width: calc((100% - 72px) / 4); */
     width: 100%;
 }
 
@@ -304,7 +357,6 @@ body {
 }
 
 .features-icon-wrap {
-    /* display: flex; */
     display: none;
     justify-content: center;
     align-items: center;
@@ -332,7 +384,9 @@ body {
 .team-section {
     background-color: var(--cloud);
 }
-
+.team-section>.container {
+    max-width: 294px;
+}
 .team-section-title {
     margin-bottom: 72px;
     text-align: center;
@@ -342,14 +396,12 @@ body {
     display: flex;
     flex-wrap: wrap ;
     justify-content: space-between;
-    /* gap: 24px; */
     gap: 72px;
 }
 
 .team-card-list {
     background-color: var(--white);
 
-    /* width: calc((100% - 72px) / 4); */
     width: 100%;
 
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -416,12 +468,11 @@ body {
 .customers-section-list {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 24px; */
+    
     row-gap: 72px;
     column-gap: 16px; 
 }
 .customers-section-item {
-    /* width: calc((100% - 120px) / 6); */
     width: calc((100% - 32px) / 2);
     height: 88px;
 }
@@ -476,7 +527,6 @@ body {
 .portfolio-btn-link {
     border-radius: 4px;
     padding: 12px 24px;
-    /* min-width: 78px; */
     text-align: center;
 
     border: 1px solid #e7e9fc;
@@ -597,16 +647,20 @@ body {
 
 /* Футер */
 .footer {
-    padding: 100px 0;
-    display: flex;
+    width: 100%;
+    padding: 96px 0;
+    display: block;
     background-color: var(--grey);
 }
 .footer-wrap {
     display: flex;
+    flex-direction: column;
     align-items: baseline;
-}
-.footer-wrap-left {
-    margin-right: 120px;
+
+    margin: 0 auto;
+
+    gap: 72px;
+
 }
 
 .footer-logo-link { 
@@ -631,9 +685,7 @@ body {
     color: var(--cloud);
     max-width: 264px;
 }
-.footer-wrap-center {
-    margin-right: 80px;
-}
+
 .footer-wrap-center .footer-text {
     margin-bottom: 16px;
 
