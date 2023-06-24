@@ -67,10 +67,16 @@
 
     .address-list {
         display: flex;
-        margin-left: auto;
-        gap: 40px;
-    }
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
 
+        margin-left: auto;
+
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.48px;
+    }
     .address-link {
         color: var(--slate);
 
@@ -81,6 +87,9 @@
     .address-link:focus,
     .address-link:active {
         color: var(--ocean);
+    }
+    .address-link:not(:last-child) {
+        margin-bottom: 12px;
     }
     
 /* Hero */
@@ -152,6 +161,26 @@
     }
 
     /* Футер */
+    .footer {
+        display: block;
+    }
+
+    .footer>.container {
+        max-width: 582px;
+    }
+
+    .footer-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    .footer-modal-form-input {
+        width: 264px;
+        height: 40px;
+    }
     
 
 }
@@ -265,12 +294,21 @@
     }
     /* Футер */
     .footer {
+        display: flex;
         padding: 100px 0;
+    }
+    .footer-wrap {
+        display: flex;
+        align-items: baseline;
     }
     .footer-wrap-left {
         margin-right: 120px;
     }
     .footer-wrap-center {
         margin-right: 80px;
+    }
+
+    .footer-modal-form-input {
+        padding-left: 16px;
     }
 }
