@@ -675,10 +675,10 @@ body {
     gap: 72px;
 }
 
-
-
 .footer-logo-link { 
-    display: inline-block;
+    display: block;
+    text-align: center;
+    /* display: inline-block; */
     color: var(--iris);
     margin-bottom: 16px;
     
@@ -701,6 +701,9 @@ body {
 }
 
 .footer-wrap-center .footer-text {
+    display: block;
+    text-align: center;
+
     margin-bottom: 16px;
 
     color: var(--white);
@@ -708,8 +711,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    
+    letter-spacing: 0.02em;   
 }
 
 .footer-media-list {
@@ -738,7 +740,14 @@ body {
 .footer-media-icon {
     fill: var(--cloud);
 }
+/* Футер правая часть */
+.footer-modal-form-wrap {
+    width: 100%;
+}
 .footer-modal-form-text {
+    display: block;
+    text-align: center;
+
     margin-bottom: 16px;
 
     font-weight: 500;
@@ -749,12 +758,15 @@ body {
     
     color: var(--white);
 }
-
 .footer-modal-form {
-    display: flex;
-    gap: 24px;
+    width: 100%;
 }
-
+.footer-modal-form-field {
+    width: 100%;
+}
+.footer-modal-form-input {
+    margin-bottom: 16px;
+}
 .footer-modal-form-input {
     padding-left: 16px;
 
@@ -805,7 +817,7 @@ body {
 .footer-modal-form-input-icon {
     margin-left: 16px;
 }
-
+/* Модалка */
 .backdrop {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
