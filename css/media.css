@@ -66,6 +66,8 @@
     }
 
     .address-list {
+        max-width: 119px;
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -87,9 +89,6 @@
     .address-link:focus,
     .address-link:active {
         color: var(--ocean);
-    }
-    .address-link:not(:last-child) {
-        margin-bottom: 12px;
     }
     
 /* Hero */
@@ -319,6 +318,7 @@
     }
     .footer-wrap-left {
         margin-right: 120px;
+        margin-bottom: 0;
     }
     .footer-wrap-center {
         margin-right: 80px;
