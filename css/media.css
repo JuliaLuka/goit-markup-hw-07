@@ -63,17 +63,17 @@
     .address {
         display: block;
         font-style: normal;
+
     }
 
     .address-list {
         max-width: 119px;
 
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        flex-direction: column;
 
         margin-left: auto;
+        gap: 12px;
 
         font-size: 12px;
         line-height: 14px;
@@ -208,15 +208,21 @@
 
 @media screen and (min-width: 1158px) {
     .container {
-        min-width: 1158px;
+        max-width: 1158px;
     }
 
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
+    .address {
+        display: block;
+    }
+
     .address-list {
         display: flex;
+
         margin-left: auto;
         gap: 40px;
     }   
