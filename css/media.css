@@ -335,9 +335,11 @@
     }
     .footer-wrap {
         display: flex;
+        flex-wrap: nowrap;
         align-items: baseline;
     }
     .footer-wrap-left {
+        min-width: 264px;
         margin-right: 120px;
         margin-bottom: 0;
     }
