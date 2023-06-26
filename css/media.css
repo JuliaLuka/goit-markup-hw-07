@@ -195,7 +195,7 @@
         display: flex;
         gap: 24px;
     }
-        
+
     .footer-modal-form-input {
         width: 264px;
         height: 40px;
@@ -221,7 +221,10 @@
     }
 
     .address-list {
+        max-width: none;
+
         display: flex;
+        flex-direction: row;
 
         margin-left: auto;
         gap: 40px;

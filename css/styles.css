@@ -133,10 +133,6 @@ body {
     display: none;
 }
 
-.current {
-    color: var(--ocean);
-}
-
 /* Mobile MENU */
 .button-menu {
     display: block;
@@ -216,6 +212,10 @@ body {
     letter-spacing: 0.72px;
 
     color: var(--navy-blue);
+}
+
+.current {
+    color: var(--ocean);
 }
 /* Mob Address */
 .mob-address-list {
@@ -766,9 +766,7 @@ body {
 .footer-modal-form {
     width: 100%;
 }
-.footer-modal-form-field {
-    width: 100%;
-}
+
 .footer-modal-form-input {
     margin-bottom: 16px;
 }
