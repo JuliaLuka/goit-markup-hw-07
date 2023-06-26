@@ -93,6 +93,8 @@
     
 /* Hero */
     .hero {
+        padding: 112px 0;
+
         background: var(--navy-blue);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/page-1/hero-tablet.jpg);
@@ -108,9 +110,6 @@
                 url(../images/page-1/hero-tablet-2x.jpg);
             }
         }
-    .hero-wrap {
-        padding: 112px 0;
-    }
 
     .hero-title {
         max-width: 496px;
@@ -168,6 +167,9 @@
         max-width: 582px;
         gap: 0;
 
+        column-gap: 24px;
+        row-gap: 72px;
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -180,11 +182,6 @@
     }
     .footer-wrap-center .footer-text {
         display: inline-block;
-    }
-
-    .footer-wrap-left {
-        margin-right: 24px;
-        margin-bottom: 72px;
     }
 
     .footer-modal-form-text {
@@ -236,6 +233,8 @@
     }
     /* Hero */
     .hero {
+        padding: 188px 0;
+
         background: var(--navy-blue);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/page-1/hero-img.jpg);
@@ -251,9 +250,7 @@
                 url(../images/page-1/hero-img-2x.jpg);
             }
         }
-    .hero-wrap {
-        padding: 188px 0;
-    }
+    
     .hero-title {
         max-width: 496px;
         margin: 0 auto;
